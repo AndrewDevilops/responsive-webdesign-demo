@@ -1,0 +1,230 @@
+html { font-size: 16px; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.logo {
+  max-width: 15%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+span {
+  color: midnightblue;
+}
+
+.tile-div {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  position: relative;
+}
+
+.tile-image {
+  width: 100%;
+  margin-top: 2px;
+  border-radius: 20px;
+}
+
+.card {
+  width: 49%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.card-text-div {
+  display: inline-block;
+  width: 52%;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.first-hidden {
+  display: none;
+  color: white;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  z-index: 2;
+  text-shadow: 4px 3px 2px black;
+}
+
+.card-desc {
+  font-size: 1.2rem;
+  margin: 0 20px 0 40px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+@media (width <= 1440px) {
+  body {
+    margin: 40px 40px 0 40px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (width <= 1280px) {
+  body {
+    margin: 30px 30px 0 30px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+  }
+}
+
+@media (width <= 1024px) {
+  body {
+    margin: 25px 25px 0 25px;
+  }
+
+  .logo { max-width: 25%; }
+
+  h1 { font-size: 3.75rem; }
+
+  .card-title { font-size: 1.4rem; }
+
+  .first-hidden { font-size: 1.2rem; }
+
+  .card-desc { font-size: 0.9rem; }
+
+  footer { font-size: 0.9rem; }
+}
+
+@media (width <= 800px) {
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    display: inline-block;
+    width: 73%;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .tile-image { margin-top: 22px; }
+
+  .first-hidden {
+    display: block;
+    font-size: 1rem;
+    right: 15px;
+    bottom: 7px;
+  }
+
+  .first-shown { display: none; }
+
+  .card-desc { margin-left: 20px; }
+
+  footer { font-size: 0.75rem; }
+}
+
+@media (width <= 768px) {
+  h1 {
+    font-size: 5.5vw;
+  }
+
+  .tile-div {
+    display: block;
+    width: 80%;
+  }
+
+  .first-hidden {
+    font-size: 1.5rem;
+  }
+
+  .card-text-div {
+    display: block;
+    width: auto;
+  }
+
+  .card-desc {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  footer { font-size: 1.2rem; }
+}
+
+@media (width <= 425px) {
+  .logo { max-width: 33%; }
+
+  h1 {
+    width: 100%;
+    font-size: 7vw;
+    margin-top: 0.67em;
+  }
+
+  .left { float: none; }
+
+  .right { float: none; }
+
+  .card {
+    width: 100%;
+  }
+
+  .tile-div {
+    width: 100%;
+  }
+
+  .first-hidden { font-size: 2.2rem; }
+
+  .card-desc { margin-bottom: 20px; }
+
+  footer { font-size: 1rem; }
+}
+
+@media (width <= 320px) {
+  .first-hidden { font-size: 1.8rem; }
+}
